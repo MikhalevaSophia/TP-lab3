@@ -66,21 +66,21 @@
 > Процесс такой же. Директория `hello_world_application`, файл `CMakeLists.txt`:
 > ```cmake
 > cmake_minimum_required(VERSION 3.4)
->
-project(hello_world)
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-include_directories("../formatter_lib")
-include_directories("../formatter_ex_lib")
-
-add_library(formatter_lib STATIC "../formatter_lib/formatter.cpp")
-add_library(formatter_ex_lib STATIC "../formatter_ex_lib/formatter_ex.cpp")
-
-
-
-add_executable(lab03 "hello_world.cpp")
-target_link_libraries(lab03 formatter_ex_lib formatter_lib)
+> 
+> project(hello_world)
+> set(CMAKE_CXX_STANDARD 11)
+> set(CMAKE_CXX_STANDARD_REQUIRED ON)
+> 
+> include_directories("../formatter_lib")
+> include_directories("../formatter_ex_lib")
+> 
+> add_library(formatter_lib STATIC "../formatter_lib/formatter.cpp")
+> add_library(formatter_ex_lib STATIC "../formatter_ex_lib/formatter_ex.cpp")
+> 
+> 
+> 
+> add_executable(lab03 "hello_world.cpp")
+> target_link_libraries(lab03 formatter_ex_lib formatter_lib)
 
 > # Привязываем к таргету hello_world библиотеку formatter_ex_lib
 > ```
