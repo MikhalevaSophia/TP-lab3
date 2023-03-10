@@ -10,7 +10,6 @@
 
 > Создаём **в директории** `formatter_lib` файл с названием `CMakeLists.txt`
 >
-> Приведу готовый файл:
 > ```cmake
 > cmake_minimum_required(VERSION 3.4)
 > project(formatter_lib)
